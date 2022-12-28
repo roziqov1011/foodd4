@@ -1,0 +1,45 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Barlow', sans-serif;
+  font-family: 'Livvic', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent; 
+  border-radius: 50px;
+  -webkit-transition: all ease 2s;
+  transition: all ease 2s;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0);
+  border-radius: 50px;
+  transition: all ease 2s;
+}
+
+/* Handle on hover */
+
+.container{
+  width: 1100px;
+  margin: 0 auto;
+}
+
+ul{
+  list-style-type: none;
+}

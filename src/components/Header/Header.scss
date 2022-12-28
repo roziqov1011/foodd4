@@ -1,0 +1,63 @@
+@import '../../assets/sass/Colors.scss';
+
+.header{
+    background-color: $lightBlack;
+    height: 100vh;
+}
+.header__logo{
+    padding: 24px;
+    display: block;
+}
+.header__logOut{
+    padding: 24px;
+    display: block;
+    background-color: transparent;
+    margin: 0 auto;
+    border: none;
+
+    color:  #EA7C69;
+}
+.header__list{
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-left: 12px;
+}
+
+.header__item{
+    border-radius: 12px 0px 0px 12px;
+    padding: 12px;
+}
+.header__item a{
+    color:  #EA7C69;
+    padding: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.active{
+    position: relative;
+    background-color: $lightGray;
+    a{
+        background-color: #EA7C69;
+        color: white;
+
+    }
+    &::before{
+        content: url('../../assets/img/arrow.svg');
+        position: absolute;
+        top: -14.5px;
+        right: -1px;
+    }
+    &::after{
+        content: url('../../assets/img/arrow.svg');
+        position: absolute;
+        bottom: -14.5px;
+        right: -1px;
+        transform: rotate(-90deg);
+
+    }
+}
