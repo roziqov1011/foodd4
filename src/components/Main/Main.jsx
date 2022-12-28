@@ -15,7 +15,7 @@ function Main() {
   const [category, setCategory] = useState(arrCategory[0]);
   const searchItem = (evn) => {
     const data2 = [];
-    data.map((item) => {
+    data.forEach((item) => {
       if (item.title.toLowerCase().includes(evn.toLowerCase())) {
         data2.push(item);
       }
@@ -45,7 +45,7 @@ function Main() {
         <div className="category__list">
           {arrCategory?.map((item, i) => (
             <button
-              className={category == item ? "btn__active" : ""}
+              className={category === item ? "btn__active" : ""}
               onClick={() => setCategory(item)}
               key={i}
             >
@@ -73,7 +73,7 @@ function Main() {
               </li>
             ))
           : data
-              ?.filter((e) => e.type == category)
+              ?.filter((e) => e.type === category)
               .map((item, i) => (
                 <li
                   onClick={() => {

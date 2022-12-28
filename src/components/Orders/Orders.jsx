@@ -7,7 +7,7 @@ function Orders() {
 
 
   const delOrder = (evn)=>{
-    setOrder(order.filter((e)=> e.id != evn))
+    setOrder(order.filter((e)=> e.id !== parseInt(evn)))
   }
   return (
     <div className='orders'>
